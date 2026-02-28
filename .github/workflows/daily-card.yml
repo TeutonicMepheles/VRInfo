@@ -1,0 +1,27 @@
+name: Daily VR Card
+
+on:
+  schedule:
+    - cron: "15 1 * * *"
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Generate card
+        run: python3 scripts/generate_daily_card.py --date "$(date -u +%F)"
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/cards.json
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: update daily VR card $(date -u +%F)"
+          git push
