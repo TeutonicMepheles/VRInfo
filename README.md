@@ -27,3 +27,13 @@ python3 scripts/generate_daily_card.py --date $(date +%F)
 
 ## 自动化（可选）
 已提供 GitHub Actions 工作流：`.github/workflows/daily-card.yml`，默认每天自动更新一次卡片数据。
+
+
+## 输出“今年起至今日”成果卡片
+```bash
+python3 scripts/generate_ytd_report.py --start $(date +%Y)-01-01 --end $(date +%F)
+```
+
+该命令会输出：
+- 今日成果卡片（若已有论文则附原文直链）
+- arXiv / ACM / IEEE 官方检索入口链接（可用于网络受限时手动查看原文）
