@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VR 交互设计研究雷达（2025-至今）</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>VR 交互设计研究雷达</h1>
+    <p>覆盖 2025 年至今，重点追踪 arXiv / ACM / IEEE 的研究动向与成果。</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>2025 年至今：研究动向总结</h2>
+      <div id="summary"></div>
+    </section>
+
+    <section class="panel">
+      <h2>今日成果卡片</h2>
+      <p class="sub">系统每天更新 1 张卡片，附带原文链接。</p>
+      <div id="today-card" class="card-list"></div>
+    </section>
+
+    <section class="panel">
+      <h2>历史卡片</h2>
+      <div id="history" class="card-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>数据源以 arXiv / ACM / IEEE 相关论文为主，卡片由脚本按日生成。</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
