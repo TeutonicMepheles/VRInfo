@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-08-10",
+    "topic": "VR交互设计",
+    "title": "每日成果卡片：多模态、协同与可访问性交互",
+    "summary": "今日卡片聚焦近期 VR 交互设计论文：关注多模态输入融合、协同任务设计和可访问性提升。",
+    "papers": [
+      {
+        "title": "Beyond Score-Based Gamification: Designing Spatiotemporal and Musical Experiences for VR Neck Rehabilitation",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2608.01688v1",
+        "published": "2026-08-03"
+      },
+      {
+        "title": "Enhancing immersion in Virtual Reality sports through Physical Interactions",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2604.20071v1",
+        "published": "2026-04-22"
+      }
+    ]
+  },
+  {
     "date": "2026-08-09",
     "topic": "VR交互设计",
     "title": "每日成果卡片：多模态、协同与可访问性交互",
